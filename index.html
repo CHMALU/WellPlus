@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WellPlus.pl</title>
+
+    <meta name="author" content="Dawid Chmal">
+    <title>Wellplus - Opony Ciężarowe</title>
+    <meta name="keywords" content="WellPlus, opony, opony dla tirów">
+    <link id="page_favicon" href="assets\img\icon-szeroko.png" rel="icon" type="image/x-icon"/>
 
     <!-- ------------ JS SCRIPTS ------------ -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- ------------ CSS FILES ------------ -->
+    <!-- <script src="https://kit.fontawesome.com/63234213e8.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="">
+    <div class="overlay"></div>
     <header>
         <nav class="container">
             <div class="logo">
-                <a href="#home" class="logo-picture"><img src="assets\WellPlus\logo.png" class="logo-picture"></a>
+                <a href="#home">
+                    <img src="assets\img\logo.svg" class="logo-picture">
+                </a>
             </div>
             <div class="links">
                 <ul>
@@ -27,7 +37,7 @@
                         <a href="#about" class="nav-link">O nas</a>
                     </li>
                     <li>
-                        <a href="#skills" class="nav-link">Kierunki</a>
+                        <a href="#skills" class="nav-link">Lokalizacje</a>
                     </li>
                     <li>
                         <a href="#contact" class="nav-link">Kontakt</a>
@@ -35,475 +45,510 @@
                 </ul>
                 <i class="uil uil-moon toggle-btn"></i>
             </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="showcase-area section" id="home">
-            <img src="./assets/square1.png" class="shape square" alt="square">
-
             <div class="container">
                 <div class="showcase-info">
-                    <h3 class="sub-heading">Jeśli Opony to tylko z</h3>
+                    <h3 class="sub-heading">Jeśli Opony to tylko</h3>
                     <h1 class="heading">WellPlus</h1>
-                    <p class="text">
-                    Jedź bezpiecznie i przekraczaj granice<br> z naszymi oponami dla tirów!
+                    <p class="text">Jedź bezpiecznie i przekraczaj granice<br/> z naszymi oponami dla tirów!
                     </p>
                     <div class="cta">
                         <a href="#contact" class="btn">Kontakt</a>
                         <a href="#services" class="btn secondary-btn">nasza oferta</a>
                     </div>
+                    <img src="./assets/shapes/square1.png" class="shape square" alt="square">
                 </div>
                 <div class="showcase-pictures">
-                    <img src="assets\img\wellplus海报1.jpg" class="baner" alt="baner">
-                    <img src="./assets/dots.png" class="shape dots" alt="Dots">
+                    <div class="baner"></div>
+                    <img src="./assets/shapes/dots.png" class="shape dots" alt="Dots">
                 </div>
             </div>
-             <a href="#about" class="arrow"></a>
         </section>
 
         <section class="services section" id="services">
-            <img src="./assets/triangle.png" alt="triangle" class="shape triangle">
+            <img src="./assets/shapes/triangle.png" alt="triangle" class="shape triangle">
             <div class="container">
-                <div class="services-info">
+                <div class="srv-header">
                     <h3 class="sub-heading">Nasza Oferta</h3>
-                    <div class="swap-header"><h1 class="heading">Bieżnik <span>POWER A</span> to:</h1></div>
+                    <div class="swap-header"><h1 class="heading">Bieżnik <span>POWER S</span></h1></div>
+                </div>
+                <div class="services-info">
                     <ul class="description">
-                        <li class="text">Unikalna konstrukcja bieżnika poprawiająca trakcję i zużycie bieżnika</li>
-                        <li class="text">Oszczędność paliwa dzięki niższym oporom toczenia</li>
-                        <li class="text">Ulepszona struktura karkasu dla lepszego prowadzenia w trudnych warunkach</li>
-                        <li class="text">Zaawansowana mieszanka odporna na ścieranie i niski współczynnik pustej przestrzeni dla większego przebiegu</li>
-                        <li class="text">Zygzakowaty wzór bieżnika poprawia trakcję</li>
+                        <li class="text">Niskie opory toczenia, dobra przyczepność na mokrej nawierzchni i wysokie przebiegi dzięki zmodernizowanej mieszance.</li>
+                        <li class="text">Wielokątowe rowki dla lepszej sztywności bieżnika i niższego hałasu</li>
+                        <li class="text">Unikalne lamele na bieżniku zapewniają lepszą przyczepność na mokrej nawierzchni i skuteczność hamowania na śniegu</li>
+                        <li class="text">Zoptymalizowana szerokość żeber dla równomiernego zużycia</li>
                     </ul>
                     <div class="cta">
-                        <a data-modal-target="#modal" id="rozmiar" class="btn secondary-btn">Rozmiary</a>
+                        <div class="cta2">
+                            <a href="opony-ciezarowe.html" class="btn catalog" target="_blank">Katalog</a>
+                            <a data-modal-target="#modal" id="rozmiar" class="btn secondary-btn size">Rozmiary</a>
+                        </div>
+                        <a href="assets\WellPlus Katalog.pdf" download class="btn secondary-btn download-btn">Pobierz katalog</a>
                     </div>
                 </div>
                 <div class="srv-card">
                     <div class="swap">
-                        <img src="assets\img\POWER A 22.5.png" alt="tyre" class="tyre choose">
-                        <img src="assets\img\POWER D 22.5.png" alt="tyre" class="tyre">
-                        <img src="assets\img\POWER D+ 22.5.png" alt="tyre" class="tyre">
-                        <img src="assets\img\POWER S 22.5.png" alt="tyre" class="tyre">
-                        <img src="assets\img\POWER T 22.5.png" alt="tyre" class="tyre">
+                        <div prev-btn class="prev-btn navigation">
+                            <div class="animate-arrow">
+                                <i class="uil uil-angle-left-b"></i>
+                            </div>
+                        </div>
+                        <div class="test">
+                            <img src="assets\img\POWER S 22.5.png" alt="tyre" class="tyre choose">
+                            <img src="assets\img\POWER D 22.5.png" alt="tyre" class="tyre">
+                            <img src="assets\img\POWER T 22.5.png" alt="tyre" class="tyre">
+                            <img src="assets\img\POWER A 22.5.png" alt="tyre" class="tyre">
+                            <img src="assets\img\POWER D+ 22.5.png" alt="tyre" class="tyre">
+                        </div>
+                        <div next-btn class="next-btn navigation">
+                            <div class="animate-arrow">
+                                <i class="uil uil-angle-right-b"></i>
+                            </div>
+                        </div>
+                        <div class="slider-dots">
+                            <div id="0" class="switch-dot choose"></div>
+                            <div id="1" class="switch-dot"></div>
+                            <div id="2" class="switch-dot"></div>
+                            <div id="3" class="switch-dot"></div>
+                            <div id="4" class="switch-dot"></div>
+                        </div>
                     </div>
                     <div class="switch">
                         <ul>
-                            <li id="0" class="switch-link choose">POWER A</li>
-                            <li id="1" class="switch-link">POWER D</li>
-                            <li id="2" class="switch-link">POWER D+</li>
-                            <li id="3" class="switch-link">POWER S</li>
-                            <li id="4" class="switch-link">POWER T</li>
+                            <li id="0" class="switch-link choose">POWER<br>S</li>
+                            <li id="1" class="switch-link">POWER<br>D</li>
+                            <li id="2" class="switch-link">POWER<br>T</li>
+                            <li id="3" class="switch-link">POWER<br>A</li>
+                            <li id="4" class="switch-link">POWER<br>D+</li>
                         </ul>
                     </div>
                 </div>
-                <!-- !!! POP UP -->
                 <div class="modal" id="modal">
                     <div class="modal-header">
-                        <div modal-heading class="sub-heading">Rozmiary Power A</div>
-                        <button data-close-button class="close-button">
-                            &times;
-                        </button>
+                        <div modal-heading class="sub-heading">Rozmiary Power S</div>
+                        <div data-close-button class="hamburger close-button">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
                     </div>
                     <div class="modal-body">
-                        <div modal-photo class="table choose">
-                            <div class="row">
-                                <p class="text">ROZMIAR</p>
-                                <p class="text">PR</p>
-                                <p class="text">LI/SI</p>
-                                <p class="text">POZYCJA</p>
-                                <p class="text">RR</p>
-                                <p class="text">WG</p>
-                                <p class="text">GŁOŚNOŚĆ</p>
-                                <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">315/80R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">161/157J</p>
-                                <p class="text">WSZYSTKIE</p>
-                                <p class="text">C</p>
-                                <p class="text">B</p>
-                                <p class="text">ABC | 70</p>
-                                <p class="text">19.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">13R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">156/150K</p>
-                                <p class="text">WSZYSTKIE</p>
-                                <p class="text">C</p>
-                                <p class="text">B</p>
-                                <p class="text">ABC | 70</p>
-                                <p class="text">19.0</p>
-                            </div>
-                        </div>
-                        <div modal-photo class="table scroll">
-                            <div class="row">
-                                <p class="text">ROZMIAR</p>
-                                <p class="text">PR</p>
-                                <p class="text">LI/SI</p>
-                                <p class="text">POZYCJA</p>
-                                <p class="text">RR</p>
-                                <p class="text">WG</p>
-                                <p class="text">GŁOŚNOŚĆ</p>
-                                <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">215/75R17.5</p>
-                                <p class="text">16PR</p>
-                                <p class="text">128/126M</p>
-                                <p class="text">DRIVE | 4 Grooves</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 72</p>
-                                <p class="text">15.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">295/60R22.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">150/147L</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 72</p>
-                                <p class="text">18.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">295/80R22.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">154/149M</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 72</p>
-                                <p class="text">20.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">315/60R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">154/150L (152/148M)</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 72</p>
-                                <p class="text">18.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">315/70R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">156/150L (154/150M)</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 72</p>
-                                <p class="text">19.5</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">315/80R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">156/150L (154/150M)</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 72</p>
-                                <p class="text">20.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">225/75R17.5</p>
-                                <p class="text">16PR</p>
-                                <p class="text">129/127M</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">235/75R17.5</p>
-                                <p class="text">16PR</p>
-                                <p class="text">132/130M</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">245/70R17.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">143/141J</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">265/70R19.5</p>
-                                <p class="text">16PR</p>
-                                <p class="text">140/138M</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">285/70R19.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">146/144M</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                        </div>
-                        <div modal-photo class="table">
-                            <div class="row">
-                                <p class="text">ROZMIAR</p>
-                                <p class="text">PR</p>
-                                <p class="text">LI/SI</p>
-                                <p class="text">POZYCJA</p>
-                                <p class="text">RR</p>
-                                <p class="text">WG</p>
-                                <p class="text">GŁOŚNOŚĆ</p>
-                                <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">315/80R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">156/150K</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">A</p>
-                                <p class="text">ABC | 73</p>
-                                <p class="text">22.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">13R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">156/150K</p>
-                                <p class="text">DRIVE</p>
-                                <p class="text">D</p>
-                                <p class="text">A</p>
-                                <p class="text">ABC | 73</p>
-                                <p class="text">22.0</p>
+                        <div modal-photo class="table-form choose">
+                            <div class="table scroll choose">
+                                <div class="row">
+                                    <p class="text">ROZMIAR</p>
+                                    <p class="text">PR</p>
+                                    <p class="text">LI/SI</p>
+                                    <p class="text">POZYCJA</p>
+                                    <p class="text">RR</p>
+                                    <p class="text">WG</p>
+                                    <p class="text">GŁOŚNOŚĆ</p>
+                                    <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">215/75R17.5</p>
+                                    <p class="text">16PR</p>
+                                    <p class="text">128/126M</p>
+                                    <p class="text">STEER | 3 Grooves</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">13.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">215/75R17.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">135/133J</p>
+                                    <p class="text">STEER  | 3 Grooves</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">13.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">295/80R22.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">154/149M</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">16.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">315/60R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">154/150L (152/148M)</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">14.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">315/70R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">156/150L (154/150M)</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">15.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">315/80R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">158/150L (154/150M)</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">16.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">385/55R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">160K(158L)</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">15.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">225/75R17.5</p>
+                                    <p class="text">16PR</p>
+                                    <p class="text">129/127M</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">235/75R17.5</p>
+                                    <p class="text">16PR</p>
+                                    <p class="text">132/130M</p>
+                                    <p class="text">STEER | 3 Grooves</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">13.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">235/75R17.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">143/141J</p>
+                                    <p class="text">STEER | 3 Grooves</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">13.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">245/70R17.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">143/141J</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">13.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">265/70R19.5</p>
+                                    <p class="text">16PR</p>
+                                    <p class="text">140/138M</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">14.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">265/70R19.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">143/141J</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">14.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">285/70R19.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">146/144L (144/142M)</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">14.5</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">285/70R19.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">150/148J</p>
+                                    <p class="text">STEER</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 71</p>
+                                    <p class="text">14.5</p>
+                                </div>
                             </div>
                         </div>
-                        <div modal-photo class="table scroll">
-                            <div class="row">
-                                <p class="text">ROZMIAR</p>
-                                <p class="text">PR</p>
-                                <p class="text">LI/SI</p>
-                                <p class="text">POZYCJA</p>
-                                <p class="text">RR</p>
-                                <p class="text">WG</p>
-                                <p class="text">GŁOŚNOŚĆ</p>
-                                <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">215/75R17.5</p>
-                                <p class="text">16PR</p>
-                                <p class="text">128/126M</p>
-                                <p class="text">STEER | 3 Grooves</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 71</p>
-                                <p class="text">13.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">215/75R17.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">135/133J</p>
-                                <p class="text">STEER  | 3 Grooves</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 71</p>
-                                <p class="text">13.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">295/80R22.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">154/149M</p>
-                                <p class="text">STEER</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 71</p>
-                                <p class="text">16.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">315/60R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">154/150L (152/148M)</p>
-                                <p class="text">STEER</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 71</p>
-                                <p class="text">14.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">315/70R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">156/150L (154/150M)</p>
-                                <p class="text">STEER</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 71</p>
-                                <p class="text">15.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">315/80R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">158/150L (154/150M)</p>
-                                <p class="text">STEER</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 71</p>
-                                <p class="text">16.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">385/55R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">160K(158L)</p>
-                                <p class="text">STEER</p>
-                                <p class="text">D</p>
-                                <p class="text">C</p>
-                                <p class="text">ABC | 71</p>
-                                <p class="text">15.0</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">225/75R17.5</p>
-                                <p class="text">16PR</p>
-                                <p class="text">129/127M</p>
-                                <p class="text">STEER</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">235/75R17.5</p>
-                                <p class="text">16PR</p>
-                                <p class="text">132/130M</p>
-                                <p class="text">STEER | 3 Grooves</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">235/75R17.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">143/141J</p>
-                                <p class="text">STEER | 3 Grooves</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">245/70R17.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">143/141J</p>
-                                <p class="text">STEER</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">265/70R19.5</p>
-                                <p class="text">16PR</p>
-                                <p class="text">140/138M</p>
-                                <p class="text">STEER</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">265/70R19.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">143/141J</p>
-                                <p class="text">STEER</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">285/70R19.5</p>
-                                <p class="text">18PR</p>
-                                <p class="text">146/144L (144/142M)</p>
-                                <p class="text">STEER</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">285/70R19.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">150/148J</p>
-                                <p class="text">STEER</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
+                        <div modal-photo class="table-form">
+                            <div class="table scroll">
+                                <div class="row">
+                                    <p class="text">ROZMIAR</p>
+                                    <p class="text">PR</p>
+                                    <p class="text">LI/SI</p>
+                                    <p class="text">POZYCJA</p>
+                                    <p class="text">RR</p>
+                                    <p class="text">WG</p>
+                                    <p class="text">GŁOŚNOŚĆ</p>
+                                    <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">215/75R17.5</p>
+                                    <p class="text">16PR</p>
+                                    <p class="text">128/126M</p>
+                                    <p class="text">DRIVE | 4 Grooves</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 72</p>
+                                    <p class="text">15.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">295/60R22.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">150/147L</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 72</p>
+                                    <p class="text">18.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">295/80R22.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">154/149M</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 72</p>
+                                    <p class="text">20.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">315/60R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">154/150L (152/148M)</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 72</p>
+                                    <p class="text">18.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">315/70R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">156/150L (154/150M)</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 72</p>
+                                    <p class="text">19.5</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">315/80R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">156/150L (154/150M)</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">ABC | 72</p>
+                                    <p class="text">20.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">225/75R17.5</p>
+                                    <p class="text">16PR</p>
+                                    <p class="text">129/127M</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">235/75R17.5</p>
+                                    <p class="text">16PR</p>
+                                    <p class="text">132/130M</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">245/70R17.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">143/141J</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">265/70R19.5</p>
+                                    <p class="text">16PR</p>
+                                    <p class="text">140/138M</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">285/70R19.5</p>
+                                    <p class="text">18PR</p>
+                                    <p class="text">146/144M</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">C</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                </div>
                             </div>
                         </div>
-                        <div modal-photo class="table">
-                            <div class="row">
-                                <p class="text">ROZMIAR</p>
-                                <p class="text">PR</p>
-                                <p class="text">LI/SI</p>
-                                <p class="text">POZYCJA</p>
-                                <p class="text">RR</p>
-                                <p class="text">WG</p>
-                                <p class="text">GŁOŚNOŚĆ</p>
-                                <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
+                        <div modal-photo class="table-form">
+                            <div class="table scroll">
+                                <div class="row">
+                                    <p class="text">ROZMIAR</p>
+                                    <p class="text">PR</p>
+                                    <p class="text">LI/SI</p>
+                                    <p class="text">POZYCJA</p>
+                                    <p class="text">RR</p>
+                                    <p class="text">WG</p>
+                                    <p class="text">GŁOŚNOŚĆ</p>
+                                    <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">385/65R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">160K</p>
+                                    <p class="text">TRAILER</p>
+                                    <p class="text">B</p>
+                                    <p class="text">B</p>
+                                    <p class="text">ABC | 70</p>
+                                    <p class="text">15.5</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">385/65R22.5</p>
+                                    <p class="text">24PR</p>
+                                    <p class="text">164K</p>
+                                    <p class="text">TRAILER</p>
+                                    <p class="text">B</p>
+                                    <p class="text">B</p>
+                                    <p class="text">ABC | 70</p>
+                                    <p class="text">15.5</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">435/50R19.5</p>
+                                    <p class="text">22PR</p>
+                                    <p class="text">160J</p>
+                                    <p class="text">TRAILER</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                    <p class="text">- | -</p>
+                                    <p class="text">-</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">445/45R19.5</p>
+                                    <p class="text">22PR</p>
+                                    <p class="text">160J</p>
+                                    <p class="text">TRAILER</p>
+                                    <p class="text">-</p>
+                                    <p class="text">-</p>
+                                    <p class="text">- | -</p>
+                                    <p class="text">-</p>
+                                </div>
                             </div>
-                            <div class="row">
-                                <p class="text">385/65R22.5</p>
-                                <p class="text">20PR</p>
-                                <p class="text">160K</p>
-                                <p class="text">TRAILER</p>
-                                <p class="text">B</p>
-                                <p class="text">B</p>
-                                <p class="text">ABC | 70</p>
-                                <p class="text">15.5</p>
+                        </div>
+                        <div modal-photo class="table-form">
+                            <div class="table scroll">
+                                <div class="row">
+                                    <p class="text">ROZMIAR</p>
+                                    <p class="text">PR</p>
+                                    <p class="text">LI/SI</p>
+                                    <p class="text">POZYCJA</p>
+                                    <p class="text">RR</p>
+                                    <p class="text">WG</p>
+                                    <p class="text">GŁOŚNOŚĆ</p>
+                                    <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">315/80R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">161/157J</p>
+                                    <p class="text">WSZYSTKIE</p>
+                                    <p class="text">C</p>
+                                    <p class="text">B</p>
+                                    <p class="text">ABC | 70</p>
+                                    <p class="text">19.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">13R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">156/150K</p>
+                                    <p class="text">WSZYSTKIE</p>
+                                    <p class="text">C</p>
+                                    <p class="text">B</p>
+                                    <p class="text">ABC | 70</p>
+                                    <p class="text">19.0</p>
+                                </div>
                             </div>
-                            <div class="row">
-                                <p class="text">385/65R22.5</p>
-                                <p class="text">24PR</p>
-                                <p class="text">164K</p>
-                                <p class="text">TRAILER</p>
-                                <p class="text">B</p>
-                                <p class="text">B</p>
-                                <p class="text">ABC | 70</p>
-                                <p class="text">15.5</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">435/50R19.5</p>
-                                <p class="text">22PR</p>
-                                <p class="text">160J</p>
-                                <p class="text">TRAILER</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">- | -</p>
-                                <p class="text">-</p>
-                            </div>
-                            <div class="row">
-                                <p class="text">445/45R19.5</p>
-                                <p class="text">22PR</p>
-                                <p class="text">160J</p>
-                                <p class="text">TRAILER</p>
-                                <p class="text">-</p>
-                                <p class="text">-</p>
-                                <p class="text">- | -</p>
-                                <p class="text">-</p>
+                        </div>
+                        <div modal-photo class="table-form">
+                            <div class="table scroll">
+                                <div class="row">
+                                    <p class="text">ROZMIAR</p>
+                                    <p class="text">PR</p>
+                                    <p class="text">LI/SI</p>
+                                    <p class="text">POZYCJA</p>
+                                    <p class="text">RR</p>
+                                    <p class="text">WG</p>
+                                    <p class="text">GŁOŚNOŚĆ</p>
+                                    <p class="text">GŁĘBOKOŚĆ BIEŻNIKA</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">315/80R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">156/150K</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">A</p>
+                                    <p class="text">ABC | 73</p>
+                                    <p class="text">22.0</p>
+                                </div>
+                                <div class="row">
+                                    <p class="text">13R22.5</p>
+                                    <p class="text">20PR</p>
+                                    <p class="text">156/150K</p>
+                                    <p class="text">DRIVE</p>
+                                    <p class="text">D</p>
+                                    <p class="text">A</p>
+                                    <p class="text">ABC | 73</p>
+                                    <p class="text">22.0</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -513,7 +558,7 @@
         </section>
 
         <section class="about section" id="about">
-            <img src="./assets/triangle.png" class="shape triangle" alt="">
+            <img src="./assets/shapes/triangle.png" class="shape triangle" alt="">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-card">
@@ -828,13 +873,12 @@
                 </div>
                 <div class="about-info">
                     <h3 class="sub-heading">O nas</h3>
-                    <h1 class="heading">Lorem, ipsum.</h1>
-                    <p class="text">Na polskim rynku firma nasza istnieje od 1978 roku. W okresie swojego istnienie przechodziła różnego rodzaju transformacje i przekształcenia od firmy państwowej do aktualnie firmy prywatnej - rodzinnej. <br> Aktualnie firma mieści się w Żarach na strefie przemysłowej przy ul. Gospodarczej 11. Zarząd firmy który ją kieruje i rozwija to drugie pokolenie po jej założycielu.<br>
-                    Firma w okresie swojego istnienia dała się poznać jako rzetelny partner wiodących światowych producentów opon takich jak: Michelin, Goodyear, Continental i innych posiadając ich patronat i certyfikaty oraz felgi firmy Alcar. Posiadamy certyfikat „Rzetelnego Płatnika„ nadanego przez Goodyear.
+                    <h1 class="heading">Odkryj naszą historię</h1>
+                    <p class="text">W oparciu o fabrykę opon Shandong, Tyreland jest profesjonalnym przedsiębiorstwem chińskiego przemysłu oponiarskiego założonym w 2016 r. Nasz główny zespół ma ponad 15 lat doświadczenia w branży oponiarskiej.<br>Poświęcony innowacjom technologicznym w oponach, Tyreland poświęcił się badaniom i rozwojowi, projektowaniu, produkcji i marketingowi produktów opon TBR i PCR odpowiednich dla różnych obszarów, konsumentów i wymagań użytkowych.<br>Firma zajmuje się rozwojem i sprzedażą opon radialnych do samochodów osobowych (PCR) oraz opon radialnych do samochodów ciężarowych i autobusów (TBR) na globalnym rynku handlowym.<br>Nasze niezależne marki Tourador i Wellplus zostały uznane przez klientów na całym świecie.
                     </p>
                     <div class="cta">
                         <a href="#contact" class="btn">Kontakt</a>
-                        <a href="assets\WELLPLUS.pdf" download class="btn secondary-btn">Pobierz katalog</a>
+                        <a href="#services" class="btn secondary-btn">nasza oferta</a>
                     </div>
                 </div>
             </div>
@@ -844,95 +888,55 @@
             <div class="container">
                 <div class="skills-box">
                     <div class="box-heading">
-                        <h3 class="sub-heading">Lorem, ipsum.</h3>
-                        <h1 class="heading">Lorem ipsum dolor sit.</h1>
+                        <h3 class="sub-heading">nasi dealerzy w polsce</h3>
+                        <h1 class="heading">Tu nas znajdziesz</h1>
                         <div class="box-desc">
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem praesentium sequi temporibus odit pariatur earum modi vel repellendus. Earum, commodi eum minima ab temporibus sed similique cum adipisci numquam aperiam in fugit quasi corporis deserunt autem iste unde ipsam.</p>
+                            <p class="text">Odkryj naszych dealerów Wellplus w Polsce! Zapraszamy do siedziby w Żarach, gdzie jesteśmy jedynym importerem opon ciężarowych marki WELLPLUS. Odwiedź nasze lokalizacje w całej Polsce, sprawdź interaktywną mapę i skorzystaj z profesjonalnych usług. Dołącz do rodziny Wellplus i ciesz się pewną jazdą na drogach!</p>
                             <a href="#contact" class="btn">Kontakt</a>
                         </div>
                     </div>
-                    <div class="skills-wrap">
-                        <div class="skill">
-                            <div class="sk-progress">
-                                <svg>
-                                    <circle cy="75" cx="75" r="68" />
-                                </svg>
-                                <h2 class="counter">
-                                    <span data-target="92">0</span>%
-                                </h2>
-                            </div>
-                            <div class="sk-title">Lorem, ipsum.</div>
-                        </div>
-                        <div class="skill">
-                            <div class="sk-progress">
-                                <svg>
-                                    <circle cy="75" cx="75" r="68" />
-                                </svg>
-                                <h2 class="counter">
-                                    <span data-target="68">0</span>%
-                                </h2>
-                            </div>
-                            <div class="sk-title">Lorem</div>
-                        </div>
-                        <div class="skill">
-                            <div class="sk-progress">
-                                <svg>
-                                    <circle cy="75" cx="75" r="68" />
-                                </svg>
-                                <h2 class="counter">
-                                    <span data-target="78">0</span>%
-                                </h2>
-                            </div>
-                            <div class="sk-title">Lorem</div>
-                        </div>
-                        <div class="skill">
-                            <div class="sk-progress">
-                                <svg>
-                                    <circle cy="75" cx="75" r="68" />
-                                </svg>
-                                <h2 class="counter">
-                                    <span data-target="55">0</span>%
-                                </h2>
-                            </div>
-                            <div class="sk-title">Lorem ipsum</div>
-                        </div>
+                    <div class="map-border">
+                        <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=10XOwp-qINStZrFPvorw47i9V1ndRQxs&ehbc=2E312F"></iframe>
                     </div>
-                    <img src="./assets/dots.png" alt="dots" class="shape dots">
-                    <img src="./assets/square1.png" alt="dots" class="shape square">
+                    <img src="./assets/shapes/dots.png" alt="dots" class="shape dots">
+                    <img src="./assets/shapes/square1.png" alt="dots" class="shape square">
                 </div>
             </div>
         </section>
 
         <section class="contact section" id="contact">
-            <img src="./assets/triangle.png" alt="triangle" class="shape triangle">
+            <img src="./assets/shapes/triangle.png" alt="triangle" class="shape triangle">
             <div class="container">
-                <img src="./assets/square2.png" class="shape square">
-                <div class="contact-info">
+                <img src="./assets/shapes/square2.png" class="shape square">
+                <div class="contact-heading">
                     <h3 class="sub-heading">Kontakt</h3>
                     <h1 class="heading">Odpowiemy na wszystkie pytania</h1>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quo, deleniti autem expedita placeat recusandae maiores, veniam aliquid ea, possimus nostrum!
+                    <p class="text">Dziękujemy za odwiedzenie naszej strony! Skontaktuj się z nami w sprawie opon Wellplus. Służymy pomocą w doborze najlepszego rozwiązania dla Twojego pojazdu.
                     </p>
-                    <div class="address-info">
-                        <div class="address">
-                            <i class="uil uil-building my-icon"></i><p>Hurtownia Ogumienia i Szyba Chmal sp.j.</p>
-                        </div>
-                        <div class="address">
-                            <i class="uil uil-envelope my-icon"></i><p>biuro@chmal.pl</p>
-                        </div>
-                        <div class="address">
-                            <i class="uil uil-phone my-icon"></i><p>+48 68 479 22 74</p>
-                        </div>
-                        <div class="address">
-                            <i class="uil uil-map-marker my-icon"></i><p>ul. Gospodarcza 11, 68-200 Żary</p>
+                </div>
+                <div class="address-info">
+                    <div class="address">
+                        <i class="uil uil-building my-icon"></i><p><a href="https://chmal.pl" target="_blank">Hurtownia Ogumienia i Szyb Chmal sp.j.</a></p>
+                    </div>
+                    <div class="address">
+                        <i class="uil uil-envelope my-icon"></i><p><a href="mailto: wellplus@chmal.pl" target="_blank">wellplus@chmal.pl</a></p>
+                    </div>
+                    <div class="address">
+                        <i class="uil uil-phone my-icon"></i>
+                        <div  class="contact-phone">
+                            <p><a href="tel:+48 68 479 22 22">+48 68 479 22 22</a></p>
+                            <p><a href="tel: +48 600 931 000">+48 600 931 000</a></p>
                         </div>
                     </div>
+                    <div class="address">
+                        <i class="uil uil-map-marker my-icon"></i><p><a href="https://goo.gl/maps/qRqDxF1uNADquQgM9" target="_blank">ul. Gospodarcza 11, 68-200 Żary</a></p>
+                    </div>
                 </div>
-
-                <form action="index.html" class="contact-form">
+                <form form class="contact-form">
                     <h3>Wyślij wiadomość</h3>
-                    <input type="text" class="form-input" placeholder="Imię" required>
-                    <input type="email" class="form-input" placeholder="Email" required>
-                    <textarea placeholder="Wiadomość" class="form-input" required></textarea>
+                    <input id="contact-name" type="text" class="form-input" placeholder="Imię" required>
+                    <input id="contact-email" type="email"  class="form-input" placeholder="Email" required>
+                    <textarea id="contact-message" placeholder="Wiadomość" class="form-input" required></textarea>
                     <input type="submit" value="Wyślij" class="btn">
                 </form>
             </div>
@@ -942,7 +946,7 @@
     <footer>
         <div class="container">
             <div class="logo">
-                <a href="#home" class="logo-picture"><img src="assets\WellPlus\logo.png" class="logo-picture"></a>
+                <a href="#home" class="logo-picture"><img src="assets\img\logo.svg" class="logo-picture"></a>
             </div>
             <p class="text">&copy; Copyright 2023. All rights reserved</p>
             <ul class="social-media">
@@ -952,12 +956,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="social-link">
-                        <i class="uil uil-twitter"></i>
+                    <a href="https://www.instagram.com/premio.chmal/" target="_blank" class="social-link">
+                        <i class="uil uil-instagram"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://chmal.pl" target="_blank" class="social-link">
+                    <a href="https://www.tiktok.com/@premio.chmal" target="_blank" class="social-link">
+                        <i class="ri-tiktok-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://chmal.pl" target="_blank" target="_blank" class="social-link">
                         <i class="uil uil-dribbble"></i>
                     </a>
                 </li>
@@ -966,6 +975,12 @@
     </footer>
 
     <!-- JavaScript Files -->
+    <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("aitGrvXM-3KTsK9qR");
+        })();
+    </script>
     <script src="js/app.js"></script>
 </body>
 </html>
